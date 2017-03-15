@@ -1,5 +1,7 @@
 package edu.wmich.cs1120.la5;
 
+import java.util.ArrayList;
+
 public interface IRover {
 	ArrayList<IArea> getPath();
 	// Set the path to be the given argument

@@ -39,9 +39,6 @@ public abstract class Area implements IArea {
 	}
 
 	@Override
-	public double calcConsumedEnergy() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	public abstract double calcConsumedEnergy();
 
 }
