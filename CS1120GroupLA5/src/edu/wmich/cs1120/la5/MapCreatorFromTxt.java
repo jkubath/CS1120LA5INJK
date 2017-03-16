@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import edu.wmich.cs1120.la5.TerrainScanner;
 
-public class MapCreator implements IMapCreator {
+public class MapCreatorFromTxt implements IMapCreator {
 	private TerrainScanner scanner = new TerrainScanner(); // created TerrainScanner to access terrain
 	                                                    // setter.
 	private IArea[][] area = new IArea[10][10]; // predetermined 10x10 size array for simulating map
@@ -110,7 +110,6 @@ public class MapCreator implements IMapCreator {
 	 */
 	@Override
 	public TerrainScanner getScanner() {
-
 		return this.scanner;
 	}
 

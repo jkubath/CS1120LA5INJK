@@ -6,7 +6,7 @@ public class ElevationAnalyzer implements IRover {
 	// This class is responsible for providing the “average elevation”
 	//of the path.
 	
-	private MapCreator mc; // holds place for a MapCreator object to be
+	private MapCreatorFromTxt mc; // holds place for a MapCreator object to be
 	// referenced
 
 	private ArrayList<IArea> path; // holds place for an area array list to be
