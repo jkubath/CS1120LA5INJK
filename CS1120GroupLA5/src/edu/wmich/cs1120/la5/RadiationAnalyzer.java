@@ -17,6 +17,16 @@ public class RadiationAnalyzer implements IRover {
 	@Override
 	public void analyzePath() {
 		
+		double totalRad = 0;
+		String radAnalysis = "";
+		for(int index = 0; index < path.size(); index++){
+			totalRad += path.get(index).getRadiation();
+		}
+		
+		radAnalysis += totalRad;
+		
+		this.setAnalysis(radAnalysis.trim());
+		
 
 	}
 
@@ -43,6 +53,13 @@ public class RadiationAnalyzer implements IRover {
 		
 		this.path = path;
 		
+	}
+	
+	@Override
+	public String toString(){
+		
+		return "Radiation Analyzer";
+	
 	}
 
 }

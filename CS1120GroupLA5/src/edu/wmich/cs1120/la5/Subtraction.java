@@ -1,11 +1,11 @@
 package edu.wmich.cs1120.la5;
 
-public class Subtraction implements IExpression {
+public class Subtraction implements IOperation {
 
 	@Override
-	public Integer getValue() {
+	public Integer perform(IExpression left, IExpression right) {
 		
-		return null;
+		return (left.getValue() - right.getValue());
 	}
 
 }

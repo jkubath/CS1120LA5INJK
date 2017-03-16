@@ -6,34 +6,59 @@ public class EnergyAnalyzer implements IRover {
 	// This class is responsible for providing the “total energy cost”
 	//of the path.
 	
+	private MapCreator mc; // holds place for a MapCreator object to be
+	// referenced
+
+	private ArrayList<IArea> path; // holds place for an area array list to be
+	// referenced
+
+	private String analysis; 
+	
 	@Override
 	public void analyzePath() {
-		// TODO Auto-generated method stub
+		
+		double totEnergy = 0;
+		String energyAnalysis = "";
+		for(int index = 0; index < path.size(); index++){
+			totEnergy += path.get(index).calcConsumedEnergy();
+		}
+		
+		energyAnalysis += totEnergy;
+		
+		this.setAnalysis(energyAnalysis.trim());
 
 	}
 
 	@Override
 	public String getAnalysis() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return analysis;
 	}
 
 	@Override
 	public void setAnalysis(String analysis) {
-		// TODO Auto-generated method stub
+		
+		this.analysis = analysis;
 
 	}
 
 	@Override
 	public ArrayList<IArea> getPath() {
-		// TODO Auto-generated method stub
-		return null;
+		return path;
 	}
 
 	@Override
 	public void setPath(ArrayList<IArea> path) {
-		// TODO Auto-generated method stub
 		
+		this.path = path;
+		
+	}
+	
+	@Override
+	public String toString(){
+		
+		return "Energy Analyzer";
+	
 	}
 
 }
