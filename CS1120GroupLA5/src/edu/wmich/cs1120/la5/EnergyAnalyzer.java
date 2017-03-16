@@ -14,6 +14,9 @@ public class EnergyAnalyzer implements IRover {
 
 	private String analysis; 
 	
+	/**
+	 * Calculates the total energy of the path
+	 */
 	@Override
 	public void analyzePath() {
 		
@@ -29,12 +32,20 @@ public class EnergyAnalyzer implements IRover {
 
 	}
 
+	/**
+	 * Returns the total energy of the path as a string
+	 * @return analysis The total energy of the path
+	 */
 	@Override
 	public String getAnalysis() {
 		
 		return analysis;
 	}
 
+	/**
+	 * Sets the local variable for total energy
+	 * @param analysis The total energy for the found path
+	 */
 	@Override
 	public void setAnalysis(String analysis) {
 		
@@ -42,11 +53,19 @@ public class EnergyAnalyzer implements IRover {
 
 	}
 
+	/**
+	 * Returns the stored path ArrayList
+	 * @return path ArrayList that holds the objects of the path
+	 */
 	@Override
 	public ArrayList<IArea> getPath() {
 		return path;
 	}
 
+	/**
+	 * Sets the local path variable
+	 * @param path The found path
+	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
 		
@@ -54,6 +73,10 @@ public class EnergyAnalyzer implements IRover {
 		
 	}
 	
+	/**
+	 * The name of the current analyzer
+	 * @return String The name of the current analyzer
+	 */
 	@Override
 	public String toString(){
 		

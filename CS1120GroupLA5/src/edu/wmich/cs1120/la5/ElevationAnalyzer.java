@@ -14,6 +14,9 @@ public class ElevationAnalyzer implements IRover {
 
 	private String analysis;
 	
+	/**
+	 * Calculates the average path elevation
+	 */
 	@Override
 	public void analyzePath() {
 		
@@ -31,24 +34,40 @@ public class ElevationAnalyzer implements IRover {
 
 	}
 
+	/**
+	 * Returns the average path elevation
+	 * @return analysis The average path elevation
+	 */
 	@Override
 	public String getAnalysis() {
 		
 		return analysis;
 	}
 
+	/**
+	 * Sets the local analysis variable
+	 * @param The average path elevation
+	 */
 	@Override
 	public void setAnalysis(String analysis) {
 		this.analysis = analysis;
 
 	}
 
+	/**
+	 * Returns the stored ArrayList of path objects
+	 * @return path The ArrayList holding the path objects
+	 */
 	@Override
 	public ArrayList<IArea> getPath() {
 		
 		return path;
 	}
 
+	/**
+	 * Sets the local ArrayList to the found path
+	 * @param path The found path
+	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
 		
@@ -56,6 +75,10 @@ public class ElevationAnalyzer implements IRover {
 		
 	}
 	
+	/**
+	 * The name of the current analyzer
+	 * @return The name of the current analyzer
+	 */
 	@Override
 	public String toString(){
 		

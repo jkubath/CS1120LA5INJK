@@ -4,10 +4,10 @@ public class ExpressionFactory {
 	
 	/**
 	 * This method will create and return a proper object according to the arguments received. 
-	 * @param operator
-	 * @param val1
-	 * @param val2
-	 * @return
+	 * @param operator The operator of the expression
+	 * @param val1 The left side of the expression
+	 * @param val2 The right side of the expression
+	 * @return A Binary object that holds the data for the expression
 	 */
 	public static IExpression getExpression(char operator, int val1, int val2) {
 		

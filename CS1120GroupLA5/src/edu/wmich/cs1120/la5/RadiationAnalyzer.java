@@ -14,27 +14,42 @@ public class RadiationAnalyzer implements IRover {
 	
 	private String analysis;
 	
+	/**
+	 * Adds together all the radiation levels from the path and stores
+	 * in a local variable - analysis.
+	 */
 	@Override
 	public void analyzePath() {
 		
 		double totalRad = 0;
 		String radAnalysis = "";
+		//Move through the entire path and total the radiation
 		for(int index = 0; index < path.size(); index++){
 			totalRad += path.get(index).getRadiation();
 		}
 		
+		//Save the double as a string
 		radAnalysis += totalRad;
 		
+		//Save the total radiation
 		this.setAnalysis(radAnalysis.trim());
 		
 
 	}
 
+	/**
+	 * Returns the total radiation of the path
+	 * @return analysis The total radiation of the path
+	 */
 	@Override
 	public String getAnalysis() {
 		return this.analysis;
 	}
 
+	/**
+	 * Sets the total radiation local variable
+	 * @param analysis String of the total radiation of the path
+	 */
 	@Override
 	public void setAnalysis(String analysis) {
 		
@@ -42,12 +57,20 @@ public class RadiationAnalyzer implements IRover {
 
 	}
 
+	/**
+	 * Returns the ArrayList of the path objects
+	 * @return The local ArrayList of the path
+	 */
 	@Override
 	public ArrayList<IArea> getPath() {
 		
 		return path;
 	}
-
+	
+	/**
+	 * Sets the ArrayList to the found path
+	 * @param path The ArrayList of the path that was found
+	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
 		
@@ -55,6 +78,10 @@ public class RadiationAnalyzer implements IRover {
 		
 	}
 	
+	/**
+	 * Returns the name of the analyzer
+	 * @return String The name of the analyzer currently being used
+	 */
 	@Override
 	public String toString(){
 		
