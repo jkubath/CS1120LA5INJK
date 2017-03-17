@@ -6,20 +6,27 @@ public class BinaryExpression implements IExpression {
 	private IExpression right; //
 	
 	/**
-	 * 
-	 * @param left
-	 * @param right
-	 * @param op
+	 * Holds the data for the expression
+	 * @param left The number on the left of the operand
+	 * @param right The number on the right of the operand
+	 * @param op The object to perform the needed operation
 	 */
 	public BinaryExpression(IExpression left, IExpression right, IOperation op){
 		this.op = op;
 		this.left = left;
 		this.right = right;
 	}
+	
+	/**
+	 * Default BinaryExpression constructor
+	 */
+	public BinaryExpression(){
+		
+	}
 
 	/**
-	 * 
-	 * @return
+	 * Calculates and returns the needed operation
+	 * @return The outcome of the expression
 	 */
 	@Override
 	public Integer getValue() {

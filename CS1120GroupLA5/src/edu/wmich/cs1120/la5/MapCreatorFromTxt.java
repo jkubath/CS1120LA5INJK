@@ -103,8 +103,9 @@ public class MapCreatorFromTxt implements IMapCreator {
 		inFile.close(); // closes the scanner used to read the file
 	}
 
+
 	/**
-	 * This method access the reference to a TerrainScanner object.
+	 * This method accesses the reference to a TerrainScanner object.
 	 * 
 	 * @return the reference to the TerrainScanner object.
 	 */
