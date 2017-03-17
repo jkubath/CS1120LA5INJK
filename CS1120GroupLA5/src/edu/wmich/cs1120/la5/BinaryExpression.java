@@ -6,7 +6,7 @@ public class BinaryExpression implements IExpression {
 	private IExpression right; //
 	
 	/**
-	 * Holds the data for the expression
+	 * 
 	 * @param left The number on the left of the operand
 	 * @param right The number on the right of the operand
 	 * @param op The object to perform the needed operation
@@ -17,12 +17,7 @@ public class BinaryExpression implements IExpression {
 		this.right = right;
 	}
 	
-	/**
-	 * Default BinaryExpression constructor
-	 */
-	public BinaryExpression(){
-		
-	}
+	
 
 	/**
 	 * Calculates and returns the needed operation

@@ -5,9 +5,6 @@ import java.util.ArrayList;
 public class ElevationAnalyzer implements IRover {
 	// This class is responsible for providing the “average elevation”
 	//of the path.
-	
-	private IMapCreator mc; // holds place for a MapCreator object to be
-	                       // referenced
 
 	private ArrayList<IArea> path; // holds place for an area array list to be
 	                               // referenced
@@ -20,8 +17,8 @@ public class ElevationAnalyzer implements IRover {
 	@Override
 	public void analyzePath() {
 		
-		double totElevation = 0;
-		String elevAnalysis = "";
+		double totElevation = 0; //accumulator for the total of area elevations, initialized to 0.
+		String elevAnalysis = ""; //initializes the local analysis with empty space.
 		
 		for(int index = 0; index < path.size(); index++){
 			totElevation += path.get(index).getElevation();
@@ -69,7 +66,6 @@ public class ElevationAnalyzer implements IRover {
 	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
-		
 		this.path = path;
 		
 	}

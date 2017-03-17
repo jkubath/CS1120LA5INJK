@@ -98,7 +98,7 @@ public class MapCreatorFromTxt implements IMapCreator {
 
 		}
 
-		scanner.setTerrain(area); // sets the terrain with the area data
+		scanner.setTerrain(area); // sets the terrain with the area data.
 
 		inFile.close(); // closes the scanner used to read the file
 	}

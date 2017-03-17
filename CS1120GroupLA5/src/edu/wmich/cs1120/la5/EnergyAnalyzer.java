@@ -5,14 +5,11 @@ import java.util.ArrayList;
 public class EnergyAnalyzer implements IRover {
 	// This class is responsible for providing the “total energy cost”
 	//of the path.
-	
-	private IMapCreator mc; // holds place for a MapCreator object to be
-	// referenced
 
 	private ArrayList<IArea> path; // holds place for an area array list to be
 	// referenced
 
-	private String analysis; 
+	private String analysis; // holds place for a string representing the path analysis.
 	
 	/**
 	 * This method analyzes the path by calculating the total energy expended during its crossing.
