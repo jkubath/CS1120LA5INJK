@@ -6,7 +6,7 @@ public class EnergyAnalyzer implements IRover {
 	// This class is responsible for providing the “total energy cost”
 	//of the path.
 	
-	private MapCreator mc; // holds place for a MapCreator object to be
+	private IMapCreator mc; // holds place for a MapCreator object to be
 	// referenced
 
 	private ArrayList<IArea> path; // holds place for an area array list to be
@@ -14,6 +14,9 @@ public class EnergyAnalyzer implements IRover {
 
 	private String analysis; 
 	
+	/**
+	 * This method analyzes the path by calculating the total energy expended during its crossing.
+	 */
 	@Override
 	public void analyzePath() {
 		
@@ -29,12 +32,19 @@ public class EnergyAnalyzer implements IRover {
 
 	}
 
+	/**
+	 * 
+	 * @return 
+	 */
 	@Override
 	public String getAnalysis() {
 		
 		return analysis;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public void setAnalysis(String analysis) {
 		
@@ -42,11 +52,18 @@ public class EnergyAnalyzer implements IRover {
 
 	}
 
+	/**
+	 * 
+	 * @return 
+	 */
 	@Override
 	public ArrayList<IArea> getPath() {
 		return path;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
 		
@@ -54,6 +71,10 @@ public class EnergyAnalyzer implements IRover {
 		
 	}
 	
+	/**
+	 * This method returns the name of this analyzer.
+	 * @return the String object of the name of the analyzer.
+	 */
 	@Override
 	public String toString(){
 		

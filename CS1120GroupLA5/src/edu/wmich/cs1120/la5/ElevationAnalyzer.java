@@ -6,14 +6,17 @@ public class ElevationAnalyzer implements IRover {
 	// This class is responsible for providing the “average elevation”
 	//of the path.
 	
-	private MapCreator mc; // holds place for a MapCreator object to be
-	// referenced
+	private IMapCreator mc; // holds place for a MapCreator object to be
+	                       // referenced
 
 	private ArrayList<IArea> path; // holds place for an area array list to be
-	// referenced
+	                               // referenced
 
-	private String analysis;
+	private String analysis; // holds place for a string representing the path analysis.
 	
+	/**
+	 * 
+	 */
 	@Override
 	public void analyzePath() {
 		
@@ -27,28 +30,43 @@ public class ElevationAnalyzer implements IRover {
 		//gets the avg. elevation in the path, converts it to a String and puts in a temporary storage.
 		elevAnalysis += (totElevation / path.size());
 		
+		//sets the String of the calculated analysis.
 		this.setAnalysis(elevAnalysis.trim());
 
 	}
 
+	/**
+	 * 
+	 * @return 
+	 */
 	@Override
 	public String getAnalysis() {
 		
 		return analysis;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public void setAnalysis(String analysis) {
 		this.analysis = analysis;
 
 	}
 
+	/**
+	 * 
+	 * @return 
+	 */
 	@Override
 	public ArrayList<IArea> getPath() {
 		
 		return path;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
 		
@@ -56,6 +74,10 @@ public class ElevationAnalyzer implements IRover {
 		
 	}
 	
+	/**
+	 * This method returns the name of this analyzer.
+	 * @return the String object of the name of the analyzer.
+	 */
 	@Override
 	public String toString(){
 		
