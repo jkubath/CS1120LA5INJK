@@ -25,7 +25,7 @@ public class EnergyAnalyzer implements IRover {
 		
 		energyAnalysis += totEnergy;
 		
-		this.setAnalysis(this.toString() + ": " + energyAnalysis.trim());
+		this.setAnalysis(this.toString() + energyAnalysis.trim());
 
 	}
 
@@ -75,7 +75,7 @@ public class EnergyAnalyzer implements IRover {
 	@Override
 	public String toString(){
 		
-		return "Energy Analyzer";
+		return "Energy Analyzer: ";
 	
 	}
 

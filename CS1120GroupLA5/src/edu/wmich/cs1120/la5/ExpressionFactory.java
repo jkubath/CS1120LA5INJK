@@ -30,7 +30,7 @@ public class ExpressionFactory {
 			break;
 		}
 		default:
-			System.out.println("This expression can't be turned into an object.");
+			return new Literal(val1);
 		}
 		
 		

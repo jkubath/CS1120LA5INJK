@@ -29,7 +29,7 @@ public class RadiationAnalyzer implements IRover {
 		radAnalysis += totalRad; // converts and stores the total radiation as a String.
 		
 		
-		this.setAnalysis(this.toString() + ": " + radAnalysis.trim());
+		this.setAnalysis(this.toString() + radAnalysis.trim());
 		
 
 	}
@@ -82,7 +82,7 @@ public class RadiationAnalyzer implements IRover {
 	@Override
 	public String toString(){
 		
-		return "Radiation Analyzer";
+		return "Radiation Analyzer: ";
 	
 	}
 
