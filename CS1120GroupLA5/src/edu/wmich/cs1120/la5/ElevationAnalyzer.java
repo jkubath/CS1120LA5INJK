@@ -28,7 +28,7 @@ public class ElevationAnalyzer implements IRover {
 		elevAnalysis += (totElevation / path.size());
 		
 		//sets the String of the calculated analysis.
-		this.setAnalysis(elevAnalysis.trim());
+		this.setAnalysis(this.toString() + ": " + elevAnalysis.trim());
 
 	}
 

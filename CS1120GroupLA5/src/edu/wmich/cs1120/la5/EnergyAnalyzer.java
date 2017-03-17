@@ -25,7 +25,7 @@ public class EnergyAnalyzer implements IRover {
 		
 		energyAnalysis += totEnergy;
 		
-		this.setAnalysis(energyAnalysis.trim());
+		this.setAnalysis(this.toString() + ": " + energyAnalysis.trim());
 
 	}
 
