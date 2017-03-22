@@ -1,7 +1,7 @@
 package edu.wmich.cs1120.la5;
 
 public class HighArea extends Area {
-	
+
 	/**
 	 * This method gets the value of the basic energy cost in the area and
 	 * multiplies it by four to yield the calculation of the energy consumed in

@@ -14,5 +14,5 @@ public class LowArea extends Area {
 	public double calcConsumedEnergy() {
 		return getBasicEnergyCost() * 2;
 	}
-	
+
 }

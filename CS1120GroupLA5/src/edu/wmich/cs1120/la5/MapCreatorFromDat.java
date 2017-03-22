@@ -17,16 +17,20 @@ public class MapCreatorFromDat implements IMapCreator {
 												// conditions
 
 	/**
-	 * This method reads from a .dat file, converts the stored information and stores the information
-	 * in IArea type object locations that are connected to elements in a 2-d array.
-	 * @param fileName the String of the name of the .dat file to be read.
-	 * @param threshold the threshold value provided by the user in the GUI.
+	 * This method reads from a .dat file, converts the stored information and
+	 * stores the information in IArea type object locations that are connected
+	 * to elements in a 2-d array.
+	 * 
+	 * @param fileName
+	 *            the String of the name of the .dat file to be read.
+	 * @param threshold
+	 *            the threshold value provided by the user in the GUI.
 	 */
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 
-		//creates random access file reference to access a file.
-		RandomAccessFile randFile = new RandomAccessFile(fileName, "r");		
+		// creates random access file reference to access a file.
+		RandomAccessFile randFile = new RandomAccessFile(fileName, "r");
 
 		// This constant is the byte length summation for each data type in a
 		// line, given by the project outline.
@@ -35,8 +39,8 @@ public class MapCreatorFromDat implements IMapCreator {
 		int result = 0, // resultant of the calculation that determines the next
 						// location to be read. Initialized to 0 so the file is
 						// read from the beginning.
-			row = 0, col = 0; // row and column indices to store IArea type
-							  // object references in the array.
+				row = 0, col = 0; // row and column indices to store IArea type
+									// object references in the array.
 
 		double basicEnergy; // creates variable to hold the basic energy cost of
 							// an area from the file.
@@ -55,9 +59,9 @@ public class MapCreatorFromDat implements IMapCreator {
 		IArea square; // reference variable will be used to store addresses of
 						// created IArea type objects.
 
-		//try-catch statements used to see if there can be an error when reading the file.
+		// try-catch statements used to see if there can be an error when
+		// reading the file.
 		try {
-			
 
 			// do-while loop allows at least one line to be read and checks if
 			// the file pointer can be moved.
@@ -136,18 +140,18 @@ public class MapCreatorFromDat implements IMapCreator {
 			} while (result != -1);
 
 			scanner.setTerrain(area); // sets the terrain with the area data.
-			
+
 		} catch (IOException e) {
-			//prints error message if an IOException type exception was thrown.
+			// prints error message if an IOException type exception was thrown.
 			System.out.println("This error occured: " + e.getMessage());
 
-		} 
-		catch(Exception e){
-			//prints error message if any other exception generally of Exception type is thrown.
+		} catch (Exception e) {
+			// prints error message if any other exception generally of
+			// Exception type is thrown.
 			System.out.println("This error occured: " + e.getMessage());
-			
-		}finally {
-			
+
+		} finally {
+
 			randFile.close(); // closes access to the random access file.
 		}
 

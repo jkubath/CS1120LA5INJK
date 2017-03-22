@@ -1,7 +1,7 @@
 package edu.wmich.cs1120.la5;
 
 public abstract class Area implements IArea {
-	
+
 	private double basicEnergyCost; // the basic energy cost for a rover to
 									// travel in an area on the map.
 	private double elevation; // the elevation of an area on the map.
@@ -83,7 +83,9 @@ public abstract class Area implements IArea {
 	}
 
 	/**
-	 * This method will calculate and return the energy consumed in an area accordingly.
+	 * This method will calculate and return the energy consumed in an area
+	 * accordingly.
+	 * 
 	 * @return the calculated energy consumed by an area.
 	 */
 	@Override
