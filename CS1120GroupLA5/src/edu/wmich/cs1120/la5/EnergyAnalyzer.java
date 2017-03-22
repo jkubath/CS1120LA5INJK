@@ -77,6 +77,9 @@ public class EnergyAnalyzer implements IRover {
 	/**
 	 * This method sets the path field by passing the pointer passed into the
 	 * parameter during the method call, into the path variable.
+	 * 
+	 * @param path
+	 *            the variable holding the path pointer passed to it.
 	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {

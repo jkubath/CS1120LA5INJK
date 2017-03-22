@@ -66,8 +66,9 @@ public class RadiationAnalyzer implements IRover {
 	}
 
 	/**
+	 * This method retrieves the pointer to the stored path.
 	 * 
-	 * @return
+	 * @return the pointer to the path object.
 	 */
 	@Override
 	public ArrayList<IArea> getPath() {
@@ -76,8 +77,11 @@ public class RadiationAnalyzer implements IRover {
 	}
 
 	/**
+	 * This method sets the path field by passing the pointer passed into the
+	 * parameter during the method call, into the path variable.
 	 * 
 	 * @param path
+	 *            the variable holding the path pointer passed to it.
 	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
