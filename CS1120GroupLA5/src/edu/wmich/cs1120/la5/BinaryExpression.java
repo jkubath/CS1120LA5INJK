@@ -9,6 +9,10 @@ public class BinaryExpression implements IExpression {
 								// object representing a literal.
 
 	/**
+	 * This method is used to create an object of this class by taking
+	 * representations of elements of a mathematical expression and initializes
+	 * the instantiated class's fields with the respective references to those
+	 * fields.
 	 * 
 	 * @param left
 	 *            The object reference representing a literal to the left of an

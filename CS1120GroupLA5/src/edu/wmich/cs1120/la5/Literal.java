@@ -5,7 +5,8 @@ public class Literal implements IExpression {
 	private Integer value;
 
 	/**
-	 * Sets the local integer literal value.
+	 * This method is used to create an object representing an integer literal
+	 * of an expression and sets the local integer literal value.
 	 * 
 	 * @param value
 	 *            One of the numbers in the expression.

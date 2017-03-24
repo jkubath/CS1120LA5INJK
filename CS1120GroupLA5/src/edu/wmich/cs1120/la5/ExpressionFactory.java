@@ -4,7 +4,7 @@ public class ExpressionFactory {
 
 	/**
 	 * This method will create and return a proper object representing an
-	 * expression, according to the arguments received.
+	 * expression, according to the arguments received by the parameters.
 	 * 
 	 * @param operator
 	 *            The operator character parameter of an expression.
